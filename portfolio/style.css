@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+    /* for desktop size */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://goldwallpapers.com/uploads/posts/website-background-wallpapers/website_background_wallpapers_001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    /* background:black; */
+    background-attachment: fixed;
+}
+header{
+    box-sizing: border-box;
+    font-family: 'Reggae One', cursive;
+}
+header h3 .btn{
+    float: left;
+    background: transparent;
+    border: none;
+    color: orangered;
+    font-weight: bolder;
+    font-size: large;
+    transition: transform 1.1s;
+
+}
+header h3{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    padding: 1% 5%;
+    padding-right: 5%;
+    text-align: left;
+    float: left;
+    
+}
+nav{
+    float: right;
+    padding: 1% 5%;
+    padding-bottom: 4%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+    margin: 0% 0.2%;
+    border: 1px solid pink;
+    padding: 2%;    
+    border-radius: 30%;
+    transition: background-color 0.3s;
+    
+}
+
+nav a:hover{
+
+    background-color: orangered;
+}
+
+.btn:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+header h3:hover{
+    cursor: pointer;
+}
+
+
+.float-clear{
+    clear: both;
+}
+
+/* main part design */
+main h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    transition: font-size .5s;
+}
+main .service-info{
+    text-align: center;
+    transition: font-size .5s;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+main h2::first-letter{
+    font-size: 2.5rem;
+    color: orangered;
+}
+
+main h2:hover{
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+main .service-info:hover{
+    font-size: 2rem;
+    color: pink;
+    cursor: pointer;
+}
+.about{
+   
+    padding: 1% 7%;
+    color: white;
+    margin: 0 auto;
+}
+
+
+main img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.mim-img{
+    float: left;  
+    
+}
+
+.mim-bio{
+      float: left;
+      text-align: center;
+      padding: 1% 4%;
+
+}
+
+.jubair-img{
+    float: left;
+}
+
+.jubair-bio{
+    float: left;
+    text-align: center;
+}
+
+h1, p{
+    color: white;
+    text-align: center;
+}
+
+.c-h2{
+    color: white;
+    text-align: center;
+}
+
+.skill-card{
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px black;
+    padding: 2% 7%;
+    border-radius: 7%;
+}
+
+.skill-card ul li{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    margin: 15px 0px;
+    
+}
+.skill-card ul li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    top: 25px;
+    border-radius: 20px;
+    left: 0;
+    background-color: white;
+
+}
+.skill-card ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    top: 25px;
+    right: 0;
+    border-radius: 20px;
+    background-color: orangered;
+
+}
+
+.tutorials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 2%;
+    row-gap: 2%;
+    padding: 0% 4%;
+}
+
+[class*="card-"]{
+    position: relative;
+    color: white;
+}
+
+aside h5{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    background-color: orangered;
+    padding: 1% 7%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: none;
+
+}
+
+.tutorials img{
+    width: 100%;
+    height: 80%;
+    
+}
+
+.card-1:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-2:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-3:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-4:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-5:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-6:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.card-7:hover h5{
+    display: block;
+    cursor: pointer;
+}
+
+.tutorials:hover{
+    cursor: pointer;
+}
+.promise{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 7%;
+    
+}
+
+.promise button{
+    background: transparent;
+    border: none;
+}
+
+.promise-text{
+    font-size: 0.2rem;
+    color: white;
+}
+
+.promise span{
+    font-size: 0.5rem;
+    
+}
+
+.promise > div{
+    margin: 0px 7px;
+}
+
+.clock-btn, .clock-text{
+    color: maroon;
+    font-weight: bold;
+}
+
+
+.beauty-btn, .beauty-text{
+    color: purple;
+    font-weight: bold;  
+}
+
+.responsive-btn, .responsive-text{
+    color: orange;
+    font-weight: bold;
+}
+
+/* contact information */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #39A1AD;
+    padding: 1% 5%;
+    column-gap: 5px;
+}
+.contact .achivements p{
+    text-align: left;
+    font-size: 0.7rem;
+}
+.contact .achivements p::first-letter{
+    color: orangered;
+    font-weight: bold;
+}
+.contact input[type="text"],.contact input[type="email"],.contact textarea{
+    width: 100%;
+    margin: 4px 0;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.contact input[type="submit"], .contact input[type="reset"]{
+   background-color: purple;
+   border: none;
+   color: white;
+   padding: 2%;
+   border-radius: 5px;
+   
+}
+.perform-btn{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact input[type="submit"]:hover, .contact input[type="reset"]:hover{
+    background-color: rgb(83, 6, 83);
+    cursor: pointer;
+}
+
+.contact textarea{
+    padding: 2px;
+    font-size: 0.7rem;
+    resize: none;
+}
+
+.contact .more-connection{
+   
+    margin-top: 40%;
+    margin-left: 20%;
+}
+
+.contact .more-connection button{
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.contact .more-connection button:hover{
+    background-color: rgb(189, 178, 178);
+    cursor: pointer;
+}
+
+.contact .more-connection .facebook-btn{
+    color: #4267B2;
+}
+
+.contact .more-connection .youtube-btn{
+    color: #FF0000;
+}
+
+.contact .more-connection .linkiden-btn{
+    color: #2867B2;
+}
+
+.contact .more-connection .insta-btn{
+    color:#e95950;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 1% 7%;
+    font-size: 0.7rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 3px;
+}
+footer .links{
+    float: left;
+}
+
+footer .copyright{
+    float: right;
+}
+
+footer a:hover{
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
